@@ -1,0 +1,172 @@
+.theBest{
+  margin-top: 1.5rem;
+  border-radius: 4rem;
+  background-color: #363d42;
+  padding: 15px 13px;
+  width: fit-content;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ color: white;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+}
+.theBestplane{
+  margin: 0;
+  margin-right: 6px;
+  color: orange;
+  font-size: 1.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.mlsHeading h2{
+font-size: 4rem;
+text-transform: uppercase;
+color: white;
+line-height: 4rem;
+}
+.mlsFigures{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+.mlsFiguresText{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-transform: capitalize;
+
+}
+.mlsFiguresText>span:nth-of-type(1){
+font-size: 2rem;
+font-weight: 400;
+}
+.mlsFiguresText>span:nth-of-type(2){
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--orange);
+  }
+  .mlsFiguresText>span:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--lightgray);
+    }
+
+
+
+    .button1 {
+      position: relative;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 48px;
+      width: 160px;
+      font-weight: bold;
+      height: 55px;
+      -webkit-box-reflect: bottom 1px linear-gradient(transparent, #0004);
+     }
+     
+     .button1 span {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+      left: 4px;
+      text-align: center;
+      background: #2E2E2E;
+      color: rgba(255, 255, 255, 0.781);
+      transition: 0.5s;
+      z-index: 1;
+     }
+     
+     .button1:hover span {
+      color: orange;
+     }
+     
+     .button1::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: 400%;
+      opacity: 0;
+      transition: 0.5s;
+      background: orange;
+      animation: animate123 20% linear infinte;
+     }
+     
+     .button1::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: 400%;
+      filter: blur(20px);
+      transition: 0.5s;
+      background:orange;
+      animation: animate123 20% linear infinte;
+     }
+     
+     .button1:hover::before,
+     .button1:hover::after {
+      opacity: 1;
+     }
+     
+     @keyframes animate123 {
+      0% {
+       background-position: 0 0;
+      }
+     
+      50% {
+       background-position: 300% 0;
+      }
+     
+      100% {
+       background-position: 0 0;
+      }
+     }
+     
+     .button1 span::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: rgba(255,255,255,0.1);
+     }
+
+.buttons{
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.buttons>:nth-child(1){
+  border: 1px solid var(--orange);
+}
+.button2{
+ 
+  border-radius: 0px !important;
+border-color: var(--orange) !important;
+padding: 0.9rem  !important;
+color: white;
+}
+.button2:hover{
+ background-color: var(--orange);
+}
+.button2:active{
+  background-color: var(--orange) !important;
+}
