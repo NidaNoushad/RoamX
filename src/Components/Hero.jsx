@@ -11,11 +11,11 @@ const Hero = () => {
   return (
     <div>
       <div className='row heroSection'>
-        <div className='col-12 col-md-8 leftSection'>
-          <Header />
-          <MainLeftSection />
+        <div className='col-8 leftSection'>
+           <Header/>
+          <MainLeftSection/> 
         </div>
-        <div className='col-12 col-md-4 rightSection'>
+        <div className='col-4 rightSection'>
           <div className='rightSectionButton'>
             <button>
               J O I N N O W

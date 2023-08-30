@@ -1,0 +1,58 @@
+.testHeading{
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  text-transform: uppercase;
+margin-bottom: 2rem;
+}
+.testdetails{
+  display: flex;
+  flex-direction: column;
+  line-height: 6rem;
+}
+.testrelative{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.testimage{
+  width:300px;
+  height: 350px;
+  z-index: 1;
+}
+.testcol6{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.testbutton{
+  width: 100px;
+    text-align: center;
+    /* background: red; */
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    left: -136px;
+}
+.testrelative>:nth-child(1){
+  position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    width: 300px;
+    bottom: 20px;
+    height: 351px;
+    z-index: 1;
+    left: -28px;
+}
+.testrelative>:nth-child(2){
+  position: absolute;
+  background: var(--planCard);
+  width: 300px;
+  bottom: -19px;
+  height: 351px;
+  z-index: 1;
+  left: 19px;
+}

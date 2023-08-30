@@ -1,0 +1,154 @@
+.news{
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  text-transform: uppercase;
+margin-bottom: 2rem;
+}
+.news>:nth-child(1){
+  color: var(--orange);
+  width: 19rem;
+  border: 4px solid var(--orange);
+  border-radius: 20px
+}
+.newssignup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--lightgray);
+  padding: 0.5rem 1rem;
+ 
+}
+.signup>:nth-child(1){
+
+  border: none;
+  padding: 8px;
+  outline: none;
+  background-color: var(--lightgray);
+} 
+.signup>input::placeholder{
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button1 {
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 48px;
+  width: 130px;
+  font-weight: bold;
+  height: 55px;
+  -webkit-box-reflect: bottom 1px linear-gradient(transparent, #0004);
+  border: 1px solid var(--orange);
+  
+ }
+ 
+ .button1 span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  text-align: center;
+  background: #2E2E2E;
+  color: rgba(255, 255, 255, 0.781);
+  transition: 0.5s;
+  z-index: 1;
+ }
+ 
+ .button1:hover span {
+  color: orange;
+ }
+ 
+ .button1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 400%;
+  opacity: 0;
+  transition: 0.5s;
+  background: orange;
+  animation: animate123 20% linear infinte;
+ }
+ 
+ .button1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 400%;
+  filter: blur(20px);
+  transition: 0.5s;
+  background:orange;
+  animation: animate123 20% linear infinte;
+ }
+ 
+ .button1:hover::before,
+ .button1:hover::after {
+  opacity: 1;
+ }
+ 
+ @keyframes animate123 {
+  0% {
+   background-position: 0 0;
+  }
+ 
+  50% {
+   background-position: 300% 0;
+  }
+ 
+  100% {
+   background-position: 0 0;
+  }
+ }
+ 
+ .button1 span::before {
+  content: '';
+  position: absolute ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255,255,255,0.1);
+ }
