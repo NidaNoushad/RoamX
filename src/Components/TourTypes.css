@@ -14,6 +14,22 @@
 }
 
 
+@media screen and (max-width:768px) {
+  .heading{
+
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1rem;
+    font-size: 2rem;
+  }
+  .card{
+    height: 260px !important;
+  }
+.overlay{
+  top: 25px !important;
+}
+}
+
 
 
 

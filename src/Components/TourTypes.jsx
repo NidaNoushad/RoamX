@@ -11,7 +11,7 @@ const TourTypes = () => {
       <span className='strokeText'>explore our</span><span className='fst-italic'>popular</span><span className='strokeText'>tour types</span>
       </div>
       <div className='row'>
-        <div className='col-md-3 col-12 cardcenter'>
+        <div className='col-md-3 col-12 mb-3  cardcenter'>
         <div className="card wallet">
     <div className="overlay"></div>
     <div className="circle">
@@ -22,7 +22,7 @@ const TourTypes = () => {
     <p className='lead' style={{marginTop:"3px"}}>30 places</p>
 </div>
      </div>
-        <div className='col-md-3 col-12 cardcenter'>
+        <div className='col-md-3 col-12 mb-3 cardcenter'>
         <div className="card wallet">
     <div className="overlay"></div>
     <div className="circle">
@@ -35,7 +35,7 @@ const TourTypes = () => {
     <p className='lead' style={{marginTop:"3px"}}>30 places</p>
 </div>
         </div>
-        <div className='col-3'>
+        <div className='col-md-3 col-12 mb-3 cardcenter'>
         <div className="card wallet">
     <div className="overlay"></div>
     <div className="circle">
@@ -46,7 +46,7 @@ const TourTypes = () => {
     <p className='lead' style={{marginTop:"3px"}}>30 places</p>
 </div>
         </div>
-        <div className='col-3'>
+        <div className='col-md-3 col-12 mb-3  cardcenter'>
         <div className="card wallet">
     <div className="overlay"></div>
     <div className="circle">  

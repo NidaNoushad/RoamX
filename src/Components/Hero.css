@@ -10,16 +10,18 @@
   top: -4rem;
   z-index: 99;
 }
-.planeSection>img:nth-child(1){
+.planeSection>div:nth-child(1){
+  position: absolute;
+  left: 0rem;
   width: 100%;
 }
-.planeSection>img:nth-child(2){
-  position: absolute;
-  right: 25rem;
-  z-index: -1;
-  top: -10rem;
-}
 
+.planeSection>div:nth-child(2){
+  position: absolute;
+  top: -10rem;
+  left: 1.5rem;
+  z-index: -1;
+}
 
 
 
@@ -146,7 +148,7 @@
 
 /* BUTTON 3  */
 
-button {
+.buttonjoin {
   position: relative;
   width: 11em;
   height: 4em;
@@ -190,13 +192,13 @@ button {
   left: 102%;
 }
 
-button:hover #rightArrow {
+.buttonjoin:hover #rightArrow {
   background-color: var(--darkGrey);
   left: -15%;
   animation: 0.6s ease-in-out both infinite alternate rightArrow8;
 }
 
-button:hover #leftArrow {
+.buttonjoin:hover #leftArrow {
   background-color: var(--darkGrey);
   left: 103%;
   animation: 0.6s ease-in-out both infinite alternate leftArrow8;
@@ -232,31 +234,31 @@ button:hover #leftArrow {
   left: 88%;
 }
 
-button:hover #leftTop {
+.buttonjoin:hover #leftTop {
   animation: 0.1s ease-in-out 0.05s both changeColor8,
   0.2s linear 0.4s both lightEffect8;
 }
 
-button:hover #rightTop {
+.buttonjoin:hover #rightTop {
   animation: 0.1s ease-in-out 0.15s both changeColor8,
   0.2s linear 0.4s both lightEffect8;
 }
 
-button:hover #rightBottom {
+.buttonjoin:hover #rightBottom {
   animation: 0.1s ease-in-out 0.25s both changeColor8,
   0.2s linear 0.4s both lightEffect8;
 }
 
-button:hover #leftBottom {
+.buttonjoin:hover #leftBottom {
   animation: 0.1s ease-in-out 0.35s both changeColor8,
   0.2s linear 0.4s both lightEffect8;
 }
 
-button:hover .corner {
+.buttonjoin:hover .corner {
   transform: scale(1.25) rotate(45deg);
 }
 
-button:hover #clip {
+.buttonjoin:hover #clip {
   animation: 0.2s ease-in-out 0.55s both greenLight8;
   color: var(--gray);
 }
@@ -283,6 +285,7 @@ button:hover #clip {
 
 @keyframes greenLight8 {
   from {
+    
   }
 
   to {
@@ -311,3 +314,24 @@ button:hover #clip {
 }
 
 
+@media screen and (max-width:768px) {
+  .rightSection{
+    background: none;
+  }
+  .video-box{
+    left: 0rem;
+    top:0rem;
+    margin: 1rem;
+    z-index: 100;
+  }
+  .planeSection{
+    width: 360px;
+    right: -3rem;
+    top: -3rem;
+    z-index: 99;
+  }
+  .planeSection>div:nth-child(2){
+    top: -13rem;
+  }
+  
+}

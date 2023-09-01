@@ -83,3 +83,11 @@ img{
 .brandimage>div>img{
   filter: grayscale(100%);
 }
+
+@media screen and (max-width:768px) {
+  .aboutheading{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem !important;
+  }
+}

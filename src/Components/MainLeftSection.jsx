@@ -1,12 +1,15 @@
 import React from 'react'
 import './MainLeftSection.css'
 import { FaPlane } from 'react-icons/fa';
+import { motion } from "framer-motion"
 
 const MainLeftSection = () => {
+  const transition={type:"spring" ,duration: 3}
+  const mobile=window.innerWidth<=768? true:false;
   return (
-    <div  style={{marginLeft:"3rem"}}>
+    <div  className="mx-4 text-center text-md-start">
       <div className='theBest'>
-        <div className='fs-5 theBestplane'><FaPlane/></div>
+        <motion.div initial={{left: mobile? "230px" : "266px"}} whileInView={{left:"0px"}} transition={{...transition,type:'tween'}}  className='fs-5 theBestplane'><FaPlane/></motion.div>
         <span>where dream take flights</span>
       </div>
       <div className='mlsHeading mt-3 fw-bold'>
@@ -24,7 +27,7 @@ const MainLeftSection = () => {
         <p className='fs-5 lead '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, reiciendis.
         </p>
       </div>
-      <div className='mlsFigures mt-4'>
+      <div className='mlsFigures mt-4 text-start'>
         <div className='mlsFiguresText'>
           <span>50K+</span>
           <span>customers</span>

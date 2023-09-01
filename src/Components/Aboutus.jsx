@@ -12,9 +12,9 @@ import brand3 from '../assets/images/brand3.png'
 
 const Aboutus = () => {
   return (
-    <div className='container-fluid mx-4'>
+    <div className='container-fluid'>
       <div className='row'>
-        <div className='col-12 col-md-6 imagecontainer'>
+        <div className='col-12 col-md-6 imagecontainer mb-4'>
           <div className='aboutusImages'>
             <img src={image1} alt="images1" className='fullHeight' />
             <img src={image2} alt="image2" className='fullWidth ' />
@@ -24,7 +24,7 @@ const Aboutus = () => {
         </div>
         <div className='col-12 col-md-6 about'>
           <p className='text-uppercase'>some reasons</p>
-          <h1><span className='strokeText '>why</span><span>choose us?</span></h1>
+          <h1 className='aboutheading'><span className='strokeText'>why</span><span>choose us?</span></h1>
           <div className='aboutlist'>
             <div>
               <img src={tick} alt="ticks" />

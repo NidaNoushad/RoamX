@@ -10,9 +10,11 @@ const Membership = () => {
         <span className='mx-4 fst-italic'>YOUR JOURNEY</span>
         <span className='strokeText'>now with us</span>
       </div>
-      <div className='mbplans row my-5'>
+      <div className=' blur testblur1'></div>
+        <div className='blur testblur2'></div>
+      <div className='mbplans row mt-5'>
         {plansData.map((data, index) => (
-          <div className='col-md-4 col-12' key="index">
+          <div className='col-md-4 col-12 mb-3' key="index">
             <div className={`container container-${data.name.toLowerCase()}`}>
               <div className="card_box">
                 <span className={`${data.name.toLowerCase()} span1`}></span>

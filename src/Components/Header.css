@@ -1,24 +1,76 @@
 
 .headerImg{
-  width: 60px; /* Set the desired width */
-  height: 60px; /* Set the desired height */
+  width:80px; /* Set the desired width */
+  height: 47px; /* Set the desired height */
 /* background-color: rgb(45, 43, 46);
 border-radius: 100px; */
-display: flex;
-justify-content: flex-start;
+
 
 }
+.headerImg>img{
+  margin: 0 2rem;
+}
+
 .headerLogo{
  width: 100% ;
- overflow: hidden;
+ object-fit: cover;
 }
-.headerLeft{
+
+
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: #333; */
+  color: white;
 }
-.headerRight{
+
+.navbar-logo {
+  flex: 1;
+}
+
+.navbar-menu {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none; /* Hide menu icon by default */
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+}
+
+.menu-items li {
+  margin-right: 1rem;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon for smaller screens */
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+
+  .menu-items {
+    display: none; /* Hide menu items by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    background: var(--planCard);
+    width: 100%;
+    left: 0;
+    padding: 2rem;
+    z-index: 1; /* Place menu above other content */
+  }
+
+  .menu-items.active {
+    display: flex; /* Show menu items when menu is active */
+  }
 }
 
 
@@ -35,6 +87,8 @@ justify-content: flex-start;
 .cta {
   border: none;
   background: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cta span {

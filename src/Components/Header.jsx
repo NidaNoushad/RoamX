@@ -1,56 +1,31 @@
-import React from 'react'
+import React,{useState} from 'react'
 import RoamX from '../assets/images/RoamX1.png'
 import './Header.css'
+
 const Header = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
   return (
-    <div className='row'>
-    <nav className="navbar navbar-expand-lg App">
-      <div className="container-fluid">
-   
-            <div className='col-3 headerLeft'>
-              <div className="headerImg">
-                <img src={RoamX} alt="logo" className='headerLogo' />
-                </div>
-            </div>
-            <div className='col-9 '>
-        <button className="navbar-toggler  headerRight" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse headerRight" id="navbarNav">
-        <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active cta " aria-current="page" href="#">
-    <span class="hover-underline-animation"> Home </span>
-</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active cta" aria-current="page" href="#">
-    <span class="hover-underline-animation"> Services </span>
-</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active cta " aria-current="page" href="#">
-    <span class="hover-underline-animation">AboutUs</span>
-</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active cta " aria-current="page" href="#">
-    <span class="hover-underline-animation">MemberShip</span>
-</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active cta " aria-current="page" href="#">
-    <span class="hover-underline-animation"> Testimonial</span>
-</a>
-        </li>
-      </ul>         
-            </div>
-          </div>
+    <nav className="navbar container-fluid">
+       <div className=" headerImg"><img src={RoamX} alt="logo" className='headerLogo' /></div>
+       <div className="navbar-menu">
+        <div className="menu-icon" onClick={toggleMenu}>
+          &#9776;
         </div>
-        
+        <ul className={`menu-items ${menuActive ? 'active' : ''}`}>
+          <li className='cta'> <span className="hover-underline-animation"> Home </span></li>
+          <li className='cta'><span className="hover-underline-animation"> Services </span></li>
+          <li className='cta'> <span className="hover-underline-animation">AboutUs</span></li>
+          <li className='cta'><span className="hover-underline-animation">MemberShip</span></li>
+          <li className='cta'><span className="hover-underline-animation"> Testimonial</span></li>
+          </ul>
+      </div>
     </nav>
-    </div>
   )
 }
 
 export default Header
+

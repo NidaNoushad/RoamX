@@ -20,6 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;  
+  position: relative;
+    left: 266px;
 }
 
 .mlsHeading h2{
@@ -169,4 +171,26 @@ color: white;
 }
 .button2:active{
   background-color: var(--orange) !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .theBest{
+    padding: 25px 13px;
+    font-size: 13px !important;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+  }
+  
+.mlsHeading h2{
+  font-size: 2rem;
+  line-height: 3rem;
+  }
+  .buttons{
+    justify-content: center;
+    
+  }
 }
