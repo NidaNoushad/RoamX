@@ -37,11 +37,16 @@ border-radius: 100px; */
 
 .menu-icon {
   display: none; /* Hide menu icon by default */
+  position: fixed;
+  margin-right: 1rem;
+  z-index: 9999;
+
 }
 
 .menu-items {
   list-style: none;
   display: flex;
+  text-decoration: none;
 }
 
 .menu-items li {
@@ -70,6 +75,7 @@ border-radius: 100px; */
 
   .menu-items.active {
     display: flex; /* Show menu items when menu is active */
+    position: fixed;
   }
 }
 

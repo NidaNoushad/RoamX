@@ -22,7 +22,7 @@ const Aboutus = () => {
             <img src={image4} alt="image4" className='halfWidth' />
           </div>
         </div>
-        <div className='col-12 col-md-6 about'>
+        <div className='col-12 col-md-6 about' id="about">
           <p className='text-uppercase'>some reasons</p>
           <h1 className='aboutheading'><span className='strokeText'>why</span><span>choose us?</span></h1>
           <div className='aboutlist'>

@@ -1,7 +1,8 @@
 import React from 'react'
 import './MainLeftSection.css'
 import { FaPlane } from 'react-icons/fa';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import NumberCounter from 'number-counter';
 
 const MainLeftSection = () => {
   const transition={type:"spring" ,duration: 3}
@@ -29,17 +30,17 @@ const MainLeftSection = () => {
       </div>
       <div className='mlsFigures mt-4 text-start'>
         <div className='mlsFiguresText'>
-          <span>50K+</span>
+          <span><NumberCounter  end={50} start={25} delay={4} postFix="K+"/></span>
           <span>customers</span>
           <span>Happy customers</span>
         </div>
         <div className='mlsFiguresText'>
-          <span>25K+</span>
+          <span><NumberCounter  end={25} start={0} delay={4} postFix="K+"/></span>
           <span>Experience</span>
           <span>Traveling Experience</span>
         </div>
         <div className='mlsFiguresText'>
-          <span>19+</span>
+          <span><NumberCounter  end={19} start={0} delay={4} postFix="+"/></span>
           <span>guides</span>
           <span>Professional Guides</span>
         </div>

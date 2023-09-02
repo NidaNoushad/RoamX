@@ -5,7 +5,7 @@ import tick from '../assets/images/tick.png'
 const Membership = () => {
   return (
     <div>
-      <div className='mbheading mb-3'>
+      <div className='mbheading mb-3' id="members">
         <span className='strokeText'>READY TO START</span>
         <span className='mx-4 fst-italic'>YOUR JOURNEY</span>
         <span className='strokeText'>now with us</span>

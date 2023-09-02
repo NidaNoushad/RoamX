@@ -4,10 +4,11 @@ import seatour1 from '../assets/images/seatour1.png'
 import travel from '../assets/images/travel.png'
 import wedding from '../assets/images/wedding.png'
 import adventure from '../assets/images/adventure.png'
+
 const TourTypes = () => {
   return (
-    <div className='container-fluid'>
-      <div className='heading text-center mb-4'>
+    <div className='container-fluid ' style={{zIndex:"0"}}>
+      <div className='heading text-center mb-4'  id="service">
       <span className='strokeText'>explore our</span><span className='fst-italic'>popular</span><span className='strokeText'>tour types</span>
       </div>
       <div className='row'>

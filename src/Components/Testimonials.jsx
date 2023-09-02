@@ -12,9 +12,9 @@ const Testimonials = () => {
   const tLength=testimonialsData.length;
   const transition={type:"spring" , duration: 3}
   return (
-    <div className='container-fluid' style={{paddingLeft:"2rem"}}>
+    <div className='container-fluid' style={{paddingLeft:"2rem",zIndex:"0"}}>
       <div className='row'>
-        <div className='col-12 col-md-6 testdetails' >
+        <div className='col-12 col-md-6 testdetails' id='testimonial'>
         <div className='testHeading'>
         <span className='fs-6' style={{color:"var(--orange)"}}>testimonials</span>
         <span className='strokeText'>what they</span>

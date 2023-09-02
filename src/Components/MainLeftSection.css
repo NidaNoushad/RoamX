@@ -72,6 +72,7 @@ font-weight: 400;
       font-weight: bold;
       height: 55px;
       -webkit-box-reflect: bottom 1px linear-gradient(transparent, #0004);
+      z-index: 0;
      }
      
      .button1 span {

@@ -79,4 +79,7 @@ margin-bottom: 2rem;
     width: 250px;
     height: 300px;
   }
+  .testHeading{
+    font-size: 2rem;
+  }
 }
